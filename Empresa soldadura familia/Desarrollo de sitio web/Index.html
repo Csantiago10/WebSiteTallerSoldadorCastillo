@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TALLER EL SOLDADOR CASTILLO</title>
+    <link rel="apple-touch-icon-precomposed" href="favicon-144x144.png" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="favicon-72x72.png" type="image/x-icon">
     <link rel="shortcut icon" href="Img/favicon.png" type="image/x-icon">
     <meta name="description" content="Empresa dedicada a la industria de la soldadura más de diez años. Fabricación, reconstrucción de partes y mantenimiento en soldadura en Volcos y Trailers.">
+    <meta name="keywords" content="Soldadura, Ornamentación, Soldadura bronce, Soldadura, hierro, Soldadura acero inoxidable">
     <meta name="author" content="Santiago Noreña Castillo">
     <meta property="og:image" content="Logo-2.png">
     <meta property="og:description" content="Empresa dedicada a la industria de la soldadura por mas de diez años.">
     <meta property="og:title" content="Taller El Soldador Castillo.">
+    <link rel="stylesheet" href="Css/normalize.css">
     <link type="text/css" rel="stylesheet" href="Css/Style.css" >
     <link type="text/css" rel="stylesheet" href="Css/nav.css">
     <link type="text/css" rel="stylesheet" href="Css/main.css">
@@ -18,15 +22,19 @@
     <link type="text/css" rel="stylesheet" href="Css/services.css">
     <link type="text/css" rel="stylesheet" href="Css/contac.css">
     <link type="text/css" rel="stylesheet" href="Css/footer.css">
+    <script src="https://kit.fontawesome.com/0cca3cd7fd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Contenedor principal de todo el sitio web-->
     <div class="container">
         <!--Encabezado del sitio web-->
         <header class="header">
-            <img class="logo" src="Img/Logo-2.0.png" alt="TALLER EL SOLDADOR CASTILLO" title="Logo del sitio web"/>
+            <nav class="header-container">
+                <img class="header-logo" src="Img/Logo-2.0.png" alt="TALLER EL SOLDADOR CASTILLO" title="Logo del sitio web"/>
+            </nav>
+            
             <!--Barra de navegación-->
-            <nav class="navigation">
+            <nav class="header-navigation">
                 <ul>
                     <li><a href="Index.html">Inicio</a></li>
                     <li><a href="#about_us">Quienes Somos</a></li>
@@ -39,7 +47,7 @@
         <!--Contenido principal del sitio web-->
         <main >
             <!--Sección de información sobre la empresa-->
-            <div class="about_us" id="about_us">
+            <section class="about_us" id="about_us">
                 <h2>Quiénes Somos</h2>
                 <p><strong>Taller el Soldador Castillo</strong> es una empresa que lleva más de diez años en la industria de la soldadura. Empresa dedicada al sector de mantenimientos en soldadura en Volcos, Trailers y Tanques principalmente, además también se hacen montajes industriales y ornamentación.
                     Somos especiales en soldadura en acero, acero inoxidable, aluminio y bronce.
@@ -50,61 +58,116 @@
 
                 <h2>Visión</h2>
                 <p>Ser los líderes en el sector, reconocidos por su alta calidad y competencia en todos los proyectos en los que somos participes. </p>
-            </div>
+            </section>
 
             <!--Servicios que ofrece la empresa-->
-            <div class="services" id="services">
-                <h2>Servicios</h2>
+            <section class="services" id="services">
+                
 
-                <!--Secciones de los servicios de la empresa-->
-                <section class="Service">
-                    <h3>Ornamentación</h3>
-                    <p>Brindamos servicios en los siguientes tipos de soldadura:<br></p>
-                    <ul>
-                        <li>Pueras.</li>
-                        <li>Parasoles.</li>
-                        <li>Ventanas</li>
-                        <li>Rejas.</li>
-                        <li>Mesas.</li>
-                        <li>Escaleras.</li>
-                        <li>Entre otros.</li>
-                    </ul>
+                <!--Seccion servicio de ornamentacion-->
+                <div class="services-ornamentacion">
+                    <h2>Servicios</h2>
+                    <div class="services-ornamentacion-imagen">
+                        <img src="Img/muestra.jpeg">
+                    </div>
 
-                </section>
+                    <div class="services-ornamentacion-descripcion">
+                        
+                        <h3>Ornamentación</h3>
+                        <p>Brindamos servicios en los siguientes tipos de soldadura:<br></p>
+                        <ul>
+                            <li>Puertas.</li>
+                            <li>Parasoles.</li>
+                            <li>Ventanas</li>
+                            <li>Rejas.</li>
+                            <li>Mesas.</li>
+                            <li>Escaleras.</li>
+                            <li>Entre otros.</li>
+                        </ul>
+                    </div>
+                    
+                    
+                
+                </div>
 
-                <section class="service">
-                    <h3>Soldadura Especiales</h3>
-                    <p>Brindamos servicios en los siguientes tipos de soldadura:<br></p>
-                    <ul>
-                        <li><b> en hierro:</b> En este tipo de soldadura se trabaja cualquiere calibre de hierro.</li>
-                        <li><b> Soldadura en acero inoxidable:</b> Reconstrucción de piezas de este material, fabricación de piezas en acero inoxidable.</li>
-                        <li><b> Soldadura en aluminio:</b> Reconstrucción y fabricación de piezas en este tipo de material.</li>
-                        <li><b> Soldadura en bronce:</b> Recontrucción y fabricación de piezas en este tipo de material.</li>
-                    </ul>
+                <!--Seccion servicio de soldaduras especiales-->
+                <div class="services-soldaduras-especiales">
+                    <div class="services-soldaduras-especiales-imagen">
+                        <img src="Img/muestra.jpeg">
+                    </div>
+                    <div class="services-soldaduras-especiales-informacion">
+                        <h3>Soldadura Especiales</h3>
+                        <p>Brindamos servicios en los siguientes tipos de soldadura:<br></p>
+                        <ul>
+                            <li><b> en hierro:</b> En este tipo de soldadura se trabaja cualquiere calibre de hierro.</li>
+                            <li><b> Soldadura en acero inoxidable:</b> Reconstrucción de piezas de este material, fabricación de piezas en acero inoxidable.</li>
+                            <li><b> Soldadura en aluminio:</b> Reconstrucción y fabricación de piezas en este tipo de material.</li>
+                            <li><b> Soldadura en bronce:</b> Recontrucción y fabricación de piezas en este tipo de material.</li>
+                        </ul>
+                    </div>
+                    
+                    
+                
+                </div>
 
-                </section>
+                <!--Seccion de fabricacion de carpados-->
+                <div class="services-carpados">
+                    <div class="services-carpados-imagen">
+                        <img src="Img/muestra.jpeg">
+                    </div>
+                    <div class="services-carpados-informacion">
+                        <h3>fabricación de carpados</h3>
+                        <p>Fabricación de carpados en todo tipo de volquetas.</p>
+                    </div>
+                    
+                </div>
 
-                <section class="service">
-                    <h3>fabricación de carpados</h3>
-                    <p>Fabricación de carpados en todo tipo de volquetas.</p>
-                </section>
+                <!--Seccion de modificaciones de volquetas y trailers-->
+                <div class="services-petrolera">
+                    <div class="services-petrolera-imagen">
+                        <img src="Img/muestra.jpeg">
+                    </div>
+                    <div class="services-petrolera-informacion">
+                        <h3>Alistamiento de volquetas y trailers para trabajo petrolero.</h3>
+                        <ul>
+                            <li><b>Trailers:</b>Fabricación de mampara en lamina, instalación de bolsillos para pines, instalación de malacates, instalación de trompos, instalación de cajas de herramienta, etc.	</li>
+                            <li><b>Volcos:</b>Fabricación de sistema de carpado, instalación de porta repuesto, caja de herramienta, etc.</li>
+    
+                        </ul>
+                    </div>
 
-                <section class="service">
-                    <h3>Alistamiento de volquetas y trailers para trabajo petrolero.</h3>
-                    <ul>
-                        <li><b>Trailers:</b>Fabricación de mampara en lamina, instalación de bolsillos para pines, instalación de malacates, instalación de trompos, instalación de cajas de herramienta, etc.	</li>
-                        <li><b>Volcos:</b>Fabricación de sistema de carpado, instalación de porta repuesto, caja de herramienta, etc.</li>
+                    
 
-                    </ul>
-                </section>
+                
+                </div>
 
-            </div>
+            </section>
+
             <!--Sección de información de contacto de la empresa-->
-            <div class="Contact" id="contact">
-                <h2>Información de contacto</h2>
-            </div>
+            <section class="contacto">
+                <div class="contacto-contenedor" id="contact">
+                    <h2>Información de contacto</h2>
+                    <a href="" class="buttom-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </section> 
+                
 
         </main>
+
+        <footer>
+            <div class="navigation-footer">
+
+            </div>
+
+            <div class="social">
+                <a href="" class="buttom-facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+
+            </div>
+        </footer>
     </div>
 </body>
 </html>
