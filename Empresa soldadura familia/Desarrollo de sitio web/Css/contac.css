@@ -1,5 +1,49 @@
-.fab fa-whatsapp {
-    margin-left: auto;
-    margin-right: auto;
-    color: chocolate;
+/*Estilos del contenedor principal*/
+.contacto-contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
 }
+
+/*Estilos del titulo principal*/
+.contenedor-contacto h2 {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
+
+/*Estilos de titulos de secundarios*/
+.contacto-contenedor h3 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+/*Estilos de h4*/
+.contacto h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+/*Estilos de listas*/
+.direccion ul,
+.horario ul {
+    list-style: none;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+}
+
+/*Media queries para el responsive*/
+@media (max-width: 678px) {
+    .contacto-contenedor{
+        flex-direction: column;
+    }
+    
+}
+

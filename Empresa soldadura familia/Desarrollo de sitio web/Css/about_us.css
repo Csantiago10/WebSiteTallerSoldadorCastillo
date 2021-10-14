@@ -1,8 +1,75 @@
-
+/*Estilos sección sobre nosotros*/
 .about_us {
     width: 98%;
     margin-right: 10px;
     padding: 10px;
-    font-size: 1.4rem;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*Estilos titulos*/
+.about_us h2 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/*Estilos de los parrafos*/
+.about_us p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/*Estilos de la descripción sobre nosotros*/
+.about_us-informacion {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+/*Estilos del contenedor de la visión y misión */
+.about_us-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*Estilos de los contenedores de mision y vision*/
+.about_us-mision,
+.about_us-vision {
+    margin: 30px;
+    width: 50%;
+    box-shadow: 0 0 2px 2px gray;
+    
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.about_us-mision{
+    margin-left: 0;
+}
+
+
+
+.about_us-vision {
+    margin-right: 0;
+}
+
+/*Media queries para el responsive*/
+@media (max-width: 678px) {
+    .about_us-container {
+        flex-direction: column;
+       
+    }
+    .about_us-mision,
+    .about_us-vision {
+        margin: auto;
+        box-shadow: none;
+        width: 100%;
+    }
 }

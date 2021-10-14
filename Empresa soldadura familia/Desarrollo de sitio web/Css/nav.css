@@ -7,12 +7,14 @@ header {
     width: 100%;
     height: auto;
     top: 0;
-    margin-top: none;
+    margin-top: 0;
     background: #333;
     position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+  
     
 }
 
@@ -24,6 +26,7 @@ header {
 .header-logo {
     display: flex;
     height: 60px;
+    margin: 10px;
     
 }
 
@@ -49,7 +52,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     
-  
+
 }
 
 /* Estilos de la lista del menu de navegacion */
@@ -59,13 +62,29 @@ nav ul {
     nav ul li a {
         display: block;
         color: white;
-        transition: 0.4s all;
+        transition: 0.5s all;
         padding: 18px 16px;
         text-decoration: none;
     }
 
         nav ul li a:hover {
             color: yellow;
+            border-bottom: 1.5px solid yellow;
             
         }
+/*Media queries para el responsive del menú de navegación*/
+@media (max-width: 678px) {
+    header{
+        flex-direction: column;
+    }
 
+    .header-logo {
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}

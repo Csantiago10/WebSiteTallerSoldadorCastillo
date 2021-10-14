@@ -1,16 +1,82 @@
+/*Estilos del contenedor de servicios*/
+.container-services {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilos del titulo principal*/
+.titulo h2 {
+
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/*Estilos del contenedor de los servicios*/
 .services {
     width: 98%;
     padding: 10px;
     
-    font-size: 1.4rem;
-    text-align: justify;
-    line-height: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
-img {
-    border-radius: 10%;
-    height: auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  
+/*Estilos del contenedor del servicio*/
+.services-card {
+    width: 400px;
+    height: 580px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px gray;
+    overflow: hidden;
+    margin: 20px;
+    transition: all 0.35s;
+    padding: 5px;
 }
+
+.services-card h3 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+    .services-card:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 15px 18px gray;
+    }
+
+/*Estilos del contenedor de la imagen de los servicios*/
+.services-card-imagen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 20%;
+    
+}
+
+/*Estilos de la imagen*/
+.services-card img {
+    
+    width: 10rem;
+    height: 10rem;
+    
+
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+
+}
+
+/*Media queries para el responsive*/
+@media (max-width: 678px) {
+    .services{
+        flex-direction: column;
+    }
+
+    .services-card{
+        width: 100%;
+        margin: 10px auto;
+        height: 600px;
+    }
+}
+
